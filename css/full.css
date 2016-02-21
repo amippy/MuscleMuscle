@@ -11,7 +11,8 @@ body {
 /* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
 
 .full {
-    background-image: url(../img/title1.png);no-repeat center center fixed;
+    background-image: url(../img/title1.png);
+    background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
