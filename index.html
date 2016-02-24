@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html class="full">
-<!-- Make sure the <html> tag is set to the .full CSS class. Change the background image in the full.css file. -->
+<html lang="en">
 
 <head>
 
@@ -10,13 +9,26 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>女性のための筋トレまとめサイト</title>
+    <title>Enter Muscle </title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/full.css" rel="stylesheet">
+    <style>
+    body {
+        padding-top: 50px;
+        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    }
+    .jumbotron{
+      background-image: url();
+      background-repeat: no-repeat;
+      height: 1200px;
+    }
+
+    }
+
+    </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -44,17 +56,18 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
+
                     <li>
-                        <a href="about.html">About Me</a>
+                        <a href="../about.html">About Me</a>
                     </li>
                     <li class="dropdown">
                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Muscle Menu<b class="caret"></b></a>
                        <ul class="dropdown-menu">
                            <li>
-                               <a href="kubire/kubire.html">Kubire</a>
+                               <a href="kubire.html">Kubire</a>
                            </li>
                            <li>
-                               <a href="#">Leg</a>
+                               <a href="../leg/leg.html">Leg</a>
                            </li>
                            <li>
                                <a href="#">....</a>
@@ -78,13 +91,35 @@
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
+
         </div>
         <!-- /.container -->
     </nav>
 
-    <!-- Put your page content here! -->
+    <!-- Page Content -->
+    <div class="jumbotron">
+      <div class="container">
+  <h1 class="display-3">脂肪を蓄えるのではない。</br>筋肉を蓄えるのだ。</h1>
+  <hr>
+  <p>筋肉をつけることは脂肪を燃やすためにとても効果的です。</p>
+  <p>筋トレは、基礎代謝の上昇で脂肪燃焼には効果300%！</p>
+  <p>筋肉は骨格を支え、関節を動かす役目をしています。</p>
+  <p>筋肉が増えれば、骨格や関節の安定性が高まり、</br>
+    姿勢の改善、腰痛や膝痛の予防・改善の効果が期待できます！</br></p>
+  <p class="lead">
+    <a class="btn btn-info btn-lg" href="index.html" role="button">筋トレをする</a>
+  </p>
+</div>
 
-    <!-- jQuery -->
+
+
+        </div>
+        <!-- /.row -->
+
+
+    <!-- /.container -->
+
+    <!-- jQuery Version 1.11.1 -->
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
