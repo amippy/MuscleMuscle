@@ -4,6 +4,9 @@
 
 <head>
 
+
+
+
     <meta charset="utf-8">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,7 +37,7 @@
   hright:100px;
     }
 
-    
+
 
     </style>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -58,9 +61,8 @@
   <p>筋肉が増えれば、骨格や関節の安定性が高まり、</br>
     姿勢の改善、腰痛や膝痛の予防・改善の効果が期待できます！</br></p>
   <p class="lead">
-    <a class="btn btn-info btn-lg" href="ami.html" role="button">筋トレをする</a>
+    <a class="btn btn-info btn-lg" id="rect" href="ami.html" role="button">筋トレをする</a>
   </p>
-  <Button type="button" class="btn1">筋トレ</button>
 </div>
 
 
@@ -73,6 +75,23 @@
 
     <!-- jQuery Version 1.11.1 -->
     <script src="js/jquery.js"></script>
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+
+    <script>
+    $(function () {
+    setTimeout('rect()'); //アニメーションを実行
+    });
+
+    function rect() {
+      $('#rect').animate({
+        marginTop: '-=10px'
+     }, 800).animate({
+         marginTop: '+=10px'
+     }, 800);
+    setTimeout('rect()', 1600); //アニメーションを繰り返す間隔
+}
+</script>
+
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
