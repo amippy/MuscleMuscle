@@ -47,22 +47,25 @@
 
     }
     .btn-ghost {
-     background: transparent;
-    }
-    .btn-ghost.btn-info {
-     color: #5bc0de;
-    }
-    .btn-ghost.btn-info:hover{
-    color: #fff;
-    }
-    .btn-ghost.btn-white {
-     color: #fff;
-    border: 1px solid #fff;
+      background-color: transparent;
+  	border: 2px solid #fff;
+  	color: #fff;
     }
 
-     .btn-ghost.btn-white:hover {
-      color: #333;
-      background: #fff;
+    .btn-ghost.btn-info:hover{
+      border: 5px solid transparent;
+	background-image: linear-gradient(#e55d87, #5fc3e4);
+	background-origin: border-box;
+
+    }
+
+
+    #rect{
+      margin-top: 200px;
+
+    }
+    h1{
+      color: #222;
     }
 
 
@@ -81,18 +84,11 @@
     <!-- Page Content -->
     <div class="jumbotron">
       <div class="container">
-  <h1 class="display-3">脂肪を蓄えるのではない。</br>筋肉を蓄えるのだ。</h1>
-  <hr>
-  <p>筋肉をつけることは脂肪を燃やすためにとても効果的です。</p>
-  <p>筋トレは、基礎代謝の上昇で脂肪燃焼には効果300%！</p>
-  <p>筋肉は骨格を支え、関節を動かす役目をしています。</p>
-  <p>筋肉が増えれば、骨格や関節の安定性が高まり、</br>
-    姿勢の改善、腰痛や膝痛の予防・改善の効果が期待できます！</br></p>
-
-  <p class="lead">
-    <a class="btn btn-info btn-lg btn-ghost" id="rect"  href="ami.html" style="background:ransparents"role="button">筋トレをする</a>
-  </p>
-</div>
+        <h1 class="display-3">脂肪を蓄えるのではない。</br>筋肉を蓄えるのだ。</h1>
+         <p class="lead">
+           <a class="btn btn-info btn-lg btn-ghost" id="rect"  href="ami.html" style="background:ransparents"role="button">筋トレをする</a>
+         </p>
+    </div>
 
 
 
@@ -115,9 +111,9 @@
 
     function rect() {
       $('#rect').animate({
-        marginTop: '-=10px'
+        marginTop: '-=8px'
      }, 800).animate({
-         marginTop: '+=10px'
+         marginTop: '+=8px'
      }, 800);
     setTimeout('rect()', 1600); //アニメーションを繰り返す間隔
 }
