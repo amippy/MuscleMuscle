@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html >
-<lang="ja">
+<html lang="ja">
 
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,44 +22,81 @@
     <!-- Custom CSS -->
     <style>
 
-    .container h1{
-      color: #fff;
-    }
-
-
-    .jumbotron{
-      background-image: url(img/muscle.png);
+    img{
       background-repeat: no-repeat;
-      height: 1200px;
+      position: fixed;
+      width: 100vw;
     }
+
     .btn1{
       border: 5px solid transparent;
       background-image: linear-gradient(#e55d87, #5fc3e4);
       background-origin: border-box;
       width:200px;
-      height:100px;
+      height:200px;
+      margin-top: 200px;
     }
+
+
+  .btn-ghost {
+    background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  position: relative;;
+  z-index: 100;
+  left:100px;
+  top: 80px;
+  }
+
+  .btn-ghost.btn-info:hover{
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    background-origin: border-box;
+
+  }
+s
+
+
+
 
     /*responsive */
 
     /*タブレット*/
-    @media all and (min-width: 480px){
+    @media  (min-width: 375px){
+
+
 
     }
     /* PC */
-    @media all and (min-width: 768px){
+    @media (min-width: 768px){
 
-    }
+
+      .btn1{
+        border: 5px solid transparent;
+        background-image: linear-gradient(#e55d87, #5fc3e4);
+        background-origin: border-box;
+        width:200px;
+        height:200px;
+        margin-top: 200px;
+      }
+
+
     .btn-ghost {
       background-color: transparent;
   	border: 2px solid #fff;
   	color: #fff;
+    position: relative;;
+    z-index: 100;
+    left:100px;
+    top: 80px;
     }
 
     .btn-ghost.btn-info:hover{
-      border: 5px solid transparent;
-	background-image: linear-gradient(#e55d87, #5fc3e4);
-	background-origin: border-box;
+      border: 2px solid #fff;
+      background-color: transparent;
+      color: #fff;
+      background-origin: border-box;
 
     }
 
@@ -69,6 +105,11 @@
       margin-top: 200px;
 
     }
+
+    #sp_header{
+      display: none;
+    }
+  }
 
 
 
@@ -85,19 +126,13 @@
 
 <body>
     <!-- Page Content -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1 class="display-3">脂肪を蓄えるのではない。</br>筋肉を蓄えるのだ。</h1>
-         <p class="lead">
+    <img src="img/index_2.jpg">
+      <div id="pc_header">
            <a class="btn btn-info btn-lg btn-ghost" id="rect"  href="ami.html" style="background:ransparents"role="button">筋トレをする</a>
-         </p>
-    </div>
+       </div>
+       <div id="sp_header">
 
-
-
-
-
-        </div>
+       </div>
         <!-- /.row -->
 
 
